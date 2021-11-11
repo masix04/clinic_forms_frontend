@@ -1,0 +1,26 @@
+<div class="json_Server_data_container">
+    <table class="json_Server_data_div_table">
+        <tr class="table_head">
+            <th>#</th>
+            <th>{{index[0]}}</th>
+            <th>{{index[1]}}</th>
+            <th>{{index[2]}}</th>
+            <th>{{index[3]}}</th>
+            <th>{{index[4]}}</th>
+            <th>{{index[5]}}</th>
+            <th>{{index[6]}}</th>
+            <th>{{index[7]}}</th>
+        </tr>
+        <tr *ngFor="let patient of patients; let i=index" class="table_data">
+            <td>{{i}}</td>
+            <td>{{patient.name}}</td>
+            <td>{{patient.age}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.phoneNumber}}</td>
+            <td>{{patient.address}}</td>
+            <td>{{patient.firstVisitDate}}</td>
+            <td>{{patient.firstVisittime}}</td>
+            <td>{{patient.prescription}}</td>
+        </tr>
+    </table>
+</div>

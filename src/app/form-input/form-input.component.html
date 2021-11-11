@@ -1,0 +1,70 @@
+<div class="Container">
+    <!-- <h1>Welcome to Clinic!</h1> -->
+        <h3> Tell Us About your Pain, So We tell you how t0 revive</h3>
+        <hr/>
+        <div class="form_Container">
+            <form [formGroup]='patientAppointment' method="POST" (ngSubmit)="SavePARecord(patientAppointment.value)">
+                <!-- <input type="text" class="patientAppointment_input" id="id" formControlName="name" title="Name is required!"><br> -->
+
+                <label class="patientAppointment_label" for="name">Patient Name</label><br>
+                <input type="text" class="patientAppointment_input" id="name" formControlName="name" title="Name is required!"><br>
+               
+                <label class="patientAppointment_label" for="age">Age</label><br>
+                <input type="number" class="patientAppointment_input" formControlName="age" id="age" title="age is required!"><br>
+
+                <label class="patientAppointment_label">Gender</label><br>
+                <input type="radio" formControlName="gender" value="Female">Female<br>
+                <input type="radio" formControlName="gender" value="Male">Male<br>
+
+                <label class="patientAppointment_label" for="phone_number">PhoneNumber</label><br>
+                <input type="tel" class="patientAppointment_input" formControlName="phone_number" id="phone_number" title="length (11) is nesessory"><br>
+
+                <label class="patientAppointment_label" for="address">Address</label><br>
+                <input type="text" class="patientAppointment_input" formControlName="address" id="address" title="address is required!"><br>
+
+                <label class="patientAppointment_label" for="firstVisitedDate">First Visit DateTime</label><br>
+                <input type="datetime" class="patientAppointment_input formInput_dateField" id="firstVisitedDate" [readonly]="true" value="{{date | date:'fullDate'}} {{date | date:'shortTime'}}" title="DateTime is AutoSelected"><br>
+                <input type="hidden" formControlName="visiteddate" value="{{date | date:'fullDate'}}" title="Dateis AutoSelected"><br>
+                <input type="hidden" formControlName="visitedtime" value="{{date | date:'shortTime'}}" title="Time is AutoSelected"><br>
+                
+                <label class="patientAppointment_label" for="prescription">Prescription</label><br>
+                <textarea type="text" class="patientAppointment_input" formControlName="prescription" id="prescription" title="Prescription is required!"></textarea><br>
+                
+                <hr/>
+                <div class="submit_span">
+                    <p>All data Required to enable submit button</p>
+                    <input type="submit" [disabled]="!patientAppointment.valid">
+                </div>
+            </form>
+        </div><!--Form-Container-->
+            <table class="formTable">
+                <tr class="formTable_Head">
+                    <th>#</th>
+                    <th>Patient Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Phone number</th>
+                    <th>Gender</th>
+                    <th>Prescription</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th></th>
+                </tr>
+                <tr class="formTable_Body">
+                    <td>1</td>
+                    <td>{{p_name}}</td>
+                    <td>{{p_age}}</td>
+                    <td>{{p_address}}</td>
+                    <td>{{p_phoneNumber}}</td>
+                    <td>{{p_gender}}</td>
+                    <td>{{p_prescription}}</td>
+                    <td>{{date | date}}</td>
+                    <td>{{date | date:'shortTime'}}</td>
+                    <a (click)="status=true" href="#"><td>Save</td></a>
+                </tr>
+            </table>
+<p *ngIf="status==true">Form Value: {{patientAppointment.value}}</p>
+<p *ngIf="status==true">Form Status: {{patientAppointment.status}}</p>
+</div><!--Container-->
+
+

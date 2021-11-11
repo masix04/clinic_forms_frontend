@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* @use "@material/floating-label/mdc-floating-label"; */
+
+.Container
+{
+    margin:0;
+}
+.formTable 
+{
+    border:2px black solid;
+    padding:3px;
+}
+.formTable_Head th
+{
+    border: 1px black solid;
+    padding: 10px;
+}
+.formTable_Body td
+{
+    border: 1px black solid;
+    padding:5px;
+}
+.formTable_Body a td{
+    color:gold;
+    background-color: indianred;
+    font-size: 20;
+    font-family: 'Times New Roman', Times, serif;
+    padding:8px;
+    border-radius: 4px;
+}
+.formTable_Body a{
+    text-decoration: none;
+}
+.form_Container
+{
+    margin: 0.5% 0;
+}
+.Container .form_Container .formInput_dateField{
+    width:280px;
+    height:30px;
+}
+.Container .form_Container .patientAppointment_label
+{
+    text-decoration:underline;
+    margin:0.4% 0.2% 0.4%;
+}
+.Container .form_Container .patientAppointment_input
+{
+    margin:0.4% 0.2% 0.4% 1%;
+    font-size: medium;
+}
+.submit_span
+{
+    width:300px;
+    height:60px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(230, 201, 233);
+    border-radius: 8%;
+}

@@ -1,0 +1,42 @@
+SAMPLE: 
+
+- Created a Front-End fields. _/
+- Data shows on same page using FormControl  _/
+- Run Fake REST-API with Node & Express sERVEr - command => node index.js 'It will listen on the port you defined in index.js' _/
+- Run POST and Data now storing in data.json HTTP POST success with 2 ways 1- from component direct sent httpClient 2- From RestService to sent POST
+- SAVE data in file db.json
+- ***********************************    DATA Stores in data.json file
+- ***********************************    The Express Server OR Rest-Server provided the link to see data is - http:localhost/3000/Patients
+- ***********************************    We can see on other Google Tab the=at on Every refresh Data has stored in File & showing in table we created.
+
+Directory Structure
+clinic-form
+    src
+	-index.js
+	-auth.js
+	-event.js
+	-index.html
+    -data.json
+        -favicon.ico
+    server
+	-server.js
+    	assets
+	    -config.json
+	environments
+	    -environments.ts
+	app
+	    form-input
+	    json-server
+	    models
+		-patients.ts
+	    utils
+		-APIURLS
+	-app.routing.module.ts
+	-app.component.html
+	-app.component.ts
+	-app.module.ts
+	-rest.service.spec.ts
+	-rest.service.ts
+
+- Connect Database !!!!
+- Send data to DataBase  !!!!

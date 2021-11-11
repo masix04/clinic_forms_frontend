@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.json_Server_data_container
+{
+    color:rgb(17, 46, 17); 
+}
+.json_Server_data_div_table
+{
+    border: 3px black solid;
+}
+.json_Server_data_div_table .table_head th
+{
+    border-left:2px blue solid;
+    border-right:2px rgb(72, 72, 133) solid;
+    font-size: 20px;
+    padding:8px;
+}
+.json_Server_data_div_table .table_head th:nth-child(1)
+{
+    background-color: black;
+    color:whitesmoke;
+}
+.json_Server_data_div_table .table_data td
+{
+    border: 2px skyblue solid;
+    padding: 5px;
+}
+.json_Server_data_div_table .table_data td:nth-child(2)
+{
+    background-color: rgb(192, 219, 245);
+}
+.json_Server_data_div_table .table_data td:nth-child(7)
+{
+    background-color: rgb(192, 238, 127);
+}
+.json_Server_data_div_table .table_data td:nth-child(8)
+{
+    background-color: rgb(192, 238, 127);
+}

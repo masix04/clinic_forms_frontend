@@ -1,0 +1,44 @@
+{
+  "Patients": [
+    {
+      "name": "Asad",
+      "age": 12,
+      "gender": "Male",
+      "phoneNumber": "03009991112",
+      "address": "where-they-live",
+      "firstVisitDate": "2024-09-26",
+      "firstVisittime": "03:16 PM",
+      "prescription": "Pray and Do your assigned Work"
+    },
+    {
+      "name": "Saad",
+      "age": 43,
+      "gender": "Male",
+      "phoneNumber": "03009992221",
+      "address": "where-they-live",
+      "firstVisitDate": "2024-09-26",
+      "firstVisittime": "03:21 PM",
+      "prescription": "Pray and Do your assigned Work"
+    },
+    {
+      "name": "Fatima",
+      "age": 9,
+      "gender": "Female",
+      "phoneNumber": "03001111112",
+      "address": "where-they-live",
+      "firstVisitDate": "2024-09-26",
+      "firstVisittime": "03:27 PM",
+      "prescription": "Pray and Do your assigned Work"
+    },
+    {
+      "name": "Asfandyar",
+      "age": 20,
+      "gender": "Male",
+      "phoneNumber": "03009909782",
+      "address": "where-they-live",
+      "firstVisitDate": "2024-09-26",
+      "firstVisittime": "03:40 PM",
+      "prescription": "Pray and Do your assigned Work"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.formTable 
+{
+    border:2px black solid;
+    padding:3px;
+}
+.formTable_Head th
+{
+    border: 1px black solid;
+    padding: 10px;
+}
+.formTable_Body td
+{
+    border: 1px black solid;
+    padding:5px;
+}
+.formTable_Body a td{
+    color:gold;
+    background-color: indianred;
+    font-size: 20;
+    font-family: 'Times New Roman', Times, serif;
+    padding:8px;
+    border-radius: 4px;
+}
+.formTable_Body a{
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+
+<div> 
+    <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" > 
+       <input type = "text" class = "fortextbox" name = "email_id" placeholder = "emailid" 
+          formControlName = "emailid"> 
+       <br/> 
+       
+       <input type = "password" class = "fortextbox" name = "password" 
+          placeholder = "passwd" formControlName = "passwd"> 
+       <br/>
+       
+       <input type = "submit" class = "forsubmit" value = "Log In"> 
+    </form>
+ </div> 
+ <p> Email entered is : {{emailId}} </p>
+ <div>
+    <form [formGroup] = "patientData" (ngSubmit)= "Submit(patientData.value)">
+        <label>Username: </label><br>
+        <input type="text" name="ex2form_Name" id="ex2form_Name" formControlName="ex2form_Name"><br><br>
+        <label>Email: </label><br>
+        <input type="email" name="ex2form_Email" id="ex2form_Email" formControlName="ex2form_Email"><br><br>
+        <label>Password: </label><br>
+        <input type="password" name="ex2form_Password" id="ex2form_Password" formControlName="ex2form_Password"><br><br>
+    <input type="submit" value="Save" [disabled]="!patientData.valid">
+    </form>
+ </div>
+ <p> Username: {{Username}} </p>
+ <p> Email: {{Email}} </p>
+ <p> Password: {{Password}} </p>

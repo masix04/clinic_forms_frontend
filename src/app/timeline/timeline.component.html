@@ -1,0 +1,64 @@
+<div class="container page-content">
+  <div class="row">
+    <div class="col-sm-12 col-md">
+      <ngx-timeline [events]="events">
+        <ng-template let-event let-index="rowIndex" timelineBody>
+          <div>{{event.body}}</div>
+          <div class="button-row">
+            <button type="button" class="btn btn-primary" (click)="editEvent(index, eventmodal)"><i class="fa fa-edit"></i></button>
+            <button type="button" class="btn btn-danger" (click)="deleteEvent(index)"><i class="fa fa-trash"></i></button>
+          </div>
+        </ng-template>
+      </ngx-timeline>
+    </div>
+    <div class="col-md-2">
+      <button type="button" class="btn btn-primary" (click)="addEvent(eventmodal)"><i class="fa fa-plus"></i> Add</button>
+    </div>
+  </div>
+</div>
+
+<!--  This template uses the ngx-timeline component to display an array of events in a vertical timeline  -->
+<ng-template #eventmodal>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Event</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group full-width-input">
+        <label>Name</label>
+        <input class="form-control" placeholder="Event Name" formControlName="name" required>
+      </div>
+      <div class="form-group full-width-input">
+        <label>Age</label>
+        <input class="form-control" formControlName="age">
+      </div>
+      <div class="form-group full-width-input">
+        <label>Address</label>
+        <input class="form-control" formControlName="address" >
+      </div>
+      <div class="form-group full-width-input">
+        <label>PhoneNumber</label>
+        <input class="form-control" formControlName="phoneNumber" required>
+      </div>
+      <div class="form-group full-width-input">
+        <label>Appointed_date</label>
+        <input class="form-control" formControlName="appointed_date" bsDatepicker>
+      </div>
+      <div class="form-group full-width-input">
+        <label>Gender</label>
+        <input class="form-control" formControlName="gender">
+      </div>
+      <div class="form-group full-width-input">
+        <label>Prescription</label>
+        <input class="form-control" formControlName="prescription" required>
+      </div>
+      <div class="button-row">
+        <button type="button" class="btn btn-primary" (click)="modalCallback()">Submit</button>
+        <button type="button" class="btn btn-light" (click)="onCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</ng-template>

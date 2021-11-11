@@ -1,0 +1,35 @@
+<h1>Welcome to Clinic!</h1>
+    <h3> Tell Us About your Pain, So We tell you how t0 revive</h3>
+<label>Patient Name</label><br>
+<input type="text" placeholder="Patient Name" [formControl]="patient_name"><br>
+<label>PhoneNumber</label><br>
+<input type="number" placeholder="Number" [formControl]="phone_number"><br>
+<label>Address</label><br>
+<input type="text" placeholder="Address" [formControl]="address"><br>
+<label>Age</label><br>
+<input type="number" placeholder="Age" [formControl]="age"><br>
+<hr/>
+<table class="formTable">
+    <tr class="formTable_Head">
+        <th>#</th>
+        <th>Patient Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Phone number</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th></th>
+    </tr>
+    <tr class="formTable_Body">
+        <td>1</td>
+        <td>{{patient_name.value}}</td>
+        <td>{{age.value}}</td>
+        <td>{{address.value}}</td>
+        <td>{{phone_number.value}}</td>
+        <td>{{today | date}}</td>
+        <td>{{today | date:'shortTime'}}</td>
+        <a href="#"><td>Save</td></a>
+    </tr>
+</table>
+<p></p>
+

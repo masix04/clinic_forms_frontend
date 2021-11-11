@@ -1,0 +1,14 @@
+<div>
+    <h4>Welcome to E-Clinic-Record</h4>
+    <div>
+        <form [formGroup]="authorityAccess" (ngSubmit)="VerifyUser(authorityAccess.value)">
+            <label for="Username">Username</label><br>
+            <input type="text" formControlName="username" id="Username" required><br>
+
+            <label for="Pin">Pin</label><br>
+            <input type="password" formControlName="password" id="Pin" required><br>
+
+            <a type="submit" class="EClinicLogin_input_btn" [routerLink]="['/'+'clinic-form']">Login</a>
+        </form>
+    </div>
+</div>

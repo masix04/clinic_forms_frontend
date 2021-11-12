@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title> Patient-Doctor</title>
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="patient_header_div">
+                <h2 class="heading2"> Record Patient Information </h2>
+            </div>
+            <hr>
+            <!-- Patient-->
+            <div class="patient_form_div">
+               
+                <form class="patient_form" action="#" _target="_blank" method="POST" enctype="multipart">
+                    <label class="patient_form_label" for="patient_name" ><strong>Patient Name</strong> </label>
+                    <input type="text" name="patient_name" id="patient_name" /><br>
+                    <label class="patient_form_label" for="patient_phone_no" ><strong>Phone Number</strong> </label>
+                    <input type="text" name="patient_phone_no" id="patient_phone_no" /><br>
+                    <label class="patient_form_label" for="patient_age" ><strong>Age</strong> </label>
+                    <input type="text" name="patient_age" id="patient_age" /><br>
+                    <label class="patient_form_label" for="patient_gender" ><strong>Gender</strong> </label>
+                    <input type="radio" name="patient_gender" />Male
+                    <input type="radio" name="patient_gender" />Female<br>
+                </form>
+            </div>
+            <!-- Doctor-->
+            <div class="doctor_form_div">
+                <form class="doctor_form" action="#" target="_blank" method="POST" enctype="multipart-form">
+                    <label class="doctor_form_label" for="doctor_name"><strong>Doctor Name</strong></label>
+                    <input type="text" name="doctor_name" id="doctor_name" /><br>
+                    <label class="doctor_form_label" for="doctor_title"><strong>Doctor Title</strong></label>
+                    <input type="text" name="doctor_title" id="doctor_title" /><br>
+                </form>
+            </div>
+            <!-- Compounder-->
+            <div class="compounder_form_div">
+                <form class="compounder_form" action="#" target="_blank" method="POST" enctype="multipart-form">
+                    <label class="compounder_form_label" for="compounder_name"><strong>Compounder Name<strong></label>
+                    <input type="text" name="compounder_name" id="compounder_name"/>
+                    <!-- <label class="doctor_form_label" for="compounder_n">Compounder Title</label>
+                    <input type="text" name="patient_name" id="patient_name" /><br> -->
+                </form>
+            </div>
+        </div>
+    </body>
+    </html> 
